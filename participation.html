@@ -1,48 +1,19 @@
 <!DOCTYPE html>
-<!--[if IE 8]>
-<html id="ie8" lang="en-US">
-<![endif]-->
-<!--[if IE 9]>
-<html id="ie9" lang="en-US">
-<![endif]-->
-<!--[if !IE]><!-->
 <html lang="en-US">
-<!--<![endif]-->
 <head>
 	<title>The University of Alabama</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,300,600,700" rel="stylesheet" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300%7COpen+Sans:400,300,600,700" integrity="sha384-plpIUD/Q/0P2aImwNtt4JlUaA7SYxAvoSeEiYhhsZ57dMHwIyXIzfqBhiqAz70Rd" crossorigin="anonymous">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="assets/css/style.min.css" rel="stylesheet" />
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css">
-
-	<!-- UA logos - College departments -->
-	<!--<link href="assets/css/ua-logos/college-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - Arts &amp; Sciences departments -->
-	<!--<link href="assets/css/ua-logos/as-depts.min.css" rel="stylesheet" />-->
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css" integrity="sha384-kTpRxBMGYOdLoIezY37vtaSSbfP52qH5x9UZDA+3xuZmpr3HZYo0tviaiwzFOBTm" crossorigin="anonymous">
 
 	<!-- UA logos - Business departments -->
-	<!--<link href="assets/css/ua-logos/cba-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - Engineering departments -->
-	<!--<link href="assets/css/ua-logos/eng-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - Academic Affairs departments -->
-	<!--<link href="assets/css/ua-logos/aa-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - Financial Affairs departments -->
-	<!--<link href="assets/css/ua-logos/fa-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - Student Affairs departments -->
-	<!--<link href="assets/css/ua-logos/sa-depts.min.css" rel="stylesheet" />-->
-
-	<!-- UA logos - All other departments -->
-	<!--<link href="assets/css/ua-logos/other-depts.min.css" rel="stylesheet" />-->
+	<link href="assets/css/ua-logos/cba-depts.min.css" rel="stylesheet" />
 
 	<!-- Custom CSS file -->
 	<link href="assets/css/custom.css" rel="stylesheet" />
@@ -71,17 +42,12 @@
 	<meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml" />
 	<meta name="theme-color" content="#ffffff" />
 
-	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
 </head>
 <body onload="loadParticipation()">
 	<header>
 		<div class="sticky-header-container">
 			<div id="sticky-header" class="header-main header-primary navbar mega-menu disable-hover" data-spy="affix" data-offset-top="50">
-				<div class="container">
+				<div class="container" style="display: flex;">
 					<div class="navbar-container">
 						<div class="navbar-header">
 							<a class="navbar-brand ua-logo" href="index.html" title="The University of Alabama" rel="home">
@@ -95,6 +61,8 @@
 		                    </a>
 						</div> <!-- .navbar-header -->
 
+						<img src="./assets/img/legends-sm.png" class="legendNavImg">
+						
 						<nav class="navbar-right">
 							<ul class="nav navbar-nav main-nav">
 								<li class="visible-xs visible-sm">
@@ -103,10 +71,9 @@
 		                                <i class="fa fa-times"></i>
 		                            </a>
 		                        </li>
-
 								<li class="dropdown mega-menu-full">
-									<a href="#" data-toggle="dropdown" class="dropdown-toggle">
-										Pages
+									<a href="index.html" data-toggle="dropdown" class="dropdown-toggle">
+										MIS 200
 									</a>
 
 									<ul class="dropdown-menu">
@@ -115,10 +82,30 @@
 												<div class="row">
 													<div class="col-md-3">
 														<ul class="list-unstyled">
-															<li><a href="docs/pages/home-1.html">Users</a></li>
-		                                                    <li><a href="docs/pages/home-2.html">Participation</a></li>
+                                                            <li><a href="./index.html">Users</a></li>
+                                                            <li><a href="./participation.html">Participation</a></li>
 														</ul>
-													</div> <!-- .col-md-4 -->
+													</div> <!-- .col-md-3 -->
+												</div> <!-- .row -->
+											</div> <!-- .mega-menu-content -->
+										</li>
+									</ul>
+								</li>
+								<li class="dropdown mega-menu-full">
+									<a href="#" data-toggle="dropdown" class="dropdown-toggle">
+										OM
+									</a>
+
+									<ul class="dropdown-menu">
+										<li>
+											<div class="mega-menu-content">
+												<div class="row">
+													<div class="col-md-3">
+														<ul class="list-unstyled">
+                                                            <li><a href="#">Users</a></li>
+                                                            <li><a href="#">Participation</a></li>
+														</ul>
+													</div> <!-- .col-md-3 -->
 												</div> <!-- .row -->
 											</div> <!-- .mega-menu-content -->
 										</li>
@@ -141,7 +128,7 @@
                     <ul class="nav nav-pills nav-stacked">
 						<li class="dropdown mega-menu-full activeMain">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle">
-                                MIS
+                                MIS 200
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="./index.html">Users</a></li>
@@ -158,8 +145,7 @@
                             </ul>
                         </li>
                     </ul>
-					</div> 
-					<!-- .sidebar -->
+					</div> <!-- .sidebar -->
 				</div> <!-- .col-md-3 -->
 
 			<div class="col-md-9">
@@ -174,54 +160,60 @@
 					  </tr>
 					</thead>
 					<tbody>
-					  <tr>
-						<td>1</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>2</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>3</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>4</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>5</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>6</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>7</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>8</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
+						<tr id="tableRow">
+							<td>0</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>1</td>
+							<td>Timothy Markfeld</td>
+							<td>tcmarkfeld@crimson.ua.edu</td>
+							<td>Builder</td>
+						  </tr>
+						  <tr>
+							<td>2</td>
+							<td>Blake Minichan</td>
+							<td>beminichan@crimson.ua.edu</td>
+							<td>Spectator</td>
+						  </tr>
+						  <tr>
+							<td>3</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>4</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>5</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>6</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>7</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
+						  <tr>
+							<td>8</td>
+							<td>Nick Malmquist</td>
+							<td>nmmalmquist@crimson.ua.edu</td>
+							<td>Tester</td>
+						  </tr>
 					</tbody>
 				  </table>
 			</div> <!-- .col-md-9 -->
@@ -229,44 +221,42 @@
 	</div> <!-- .container -->
 </section>
 
+	<div class="footerContainer">
+		<footer class="footer">
+			<div class="footer-copyright bg-primary">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-3">
+									<a class="ua-logo ua-logo-stacked" href="https://www.ua.edu" title="The University of Alabama" rel="home">
+										<span class="sr-only">The University of Alabama</span>
+									</a>
+								</div> <!-- .col-md-3 -->
+	
+								<div class="col-md-9 col-md-9">
+									<div class="pull-right">									
+										<p class="copyright-text text-right">
+											<a href="https://www.ua.edu/copyright">Copyright &copy; 2022</a> <a href="https://www.ua.edu">The University of Alabama</a>
+											| <a href="https://www.ua.edu/disclaimer">Disclaimer</a>
+											| <a href="https://www.ua.edu/privacy">Privacy</a>
+										</p>
+									</div> <!-- .pull-right -->
+								</div> <!-- .col-md-9 -->
+							</div> <!-- .row -->
+						</div> <!-- .col-md-12 -->
+					</div> <!-- .row -->
+				</div> <!-- .container -->
+			</div> <!-- .footer-copyright -->
+		</footer>
+	</div>
 
-	<footer class="footer">
-		<div class="footer-copyright bg-primary">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="row">
-							<div class="col-md-3 col-sm-3">
-								<a class="ua-logo ua-logo-stacked" href="https://www.ua.edu" title="The University of Alabama" rel="home">
-									<span class="sr-only">The University of Alabama</span>
-								</a>
-							</div> <!-- .col-md-3 -->
 
-							<div class="col-md-9 col-md-9">
-								<div class="pull-right">
-									<ul class="disclaimer-list list-inline text-right">
-										<li><a href="#">Link 1</a></li>
-									</ul>
-									
-									<p class="copyright-text text-right">
-										<a href="https://www.ua.edu/copyright">Copyright &copy; 2022</a> <a href="https://www.ua.edu">The University of Alabama</a>
-										| <a href="https://www.ua.edu/disclaimer">Disclaimer</a>
-										| <a href="https://www.ua.edu/privacy">Privacy</a>
-									</p>
-								</div> <!-- .pull-right -->
-							</div> <!-- .col-md-9 -->
-						</div> <!-- .row -->
-					</div> <!-- .col-md-12 -->
-				</div> <!-- .row -->
-			</div> <!-- .container -->
-		</div> <!-- .footer-copyright -->
-	</footer>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" integrity="sha384-o6l2EXLcx4A+q7ls2O2OP2Lb2W7iBgOsYvuuRI6G+Efbjbk6J4xbirJpHZZoHbfs" crossorigin="anonymous"></script>
 	<script src="assets/js/vendors/bootstrap.min.js?ver=3.3.5"></script>
 	<script src="assets/js/prism.min.js"></script>
 	<script src="assets/js/scripts.min.js?ver=1.0"></script>
-	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js"></script>
+	<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js" integrity="sha384-J1VTqRX3eTNk2nvwiGSqxuZEoboOJHEARFiWWeRcyH+cTelYBIQPq9iNWeCqQV2S" crossorigin="anonymous"></script>
 	<script src="./table.js"></script>
 </body>
 </html>
