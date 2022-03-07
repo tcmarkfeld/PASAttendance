@@ -6,11 +6,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" href="/https://fonts.googleapis.com/css?family=Lato:400,700,300%7COpen+Sans:400,300,600,700" integrity="sha384-plpIUD/Q/0P2aImwNtt4JlUaA7SYxAvoSeEiYhhsZ57dMHwIyXIzfqBhiqAz70Rd" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,300%257COpen+Sans:400,300,600,700" integrity="sha384-izdz0N+XzDt7SVUFWBCOMJRnT/9rjZ5CzmZkcAjMpp1DDhVtIrgfujMxuxCO+HC5" crossorigin="anonymous"> -->
 	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="/assets/css/font-awesome.min.css" rel="stylesheet" />
 	<link href="/assets/css/style.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="/https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css" integrity="sha384-kTpRxBMGYOdLoIezY37vtaSSbfP52qH5x9UZDA+3xuZmpr3HZYo0tviaiwzFOBTm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.datatables.net/1.11.4/css/jquery.dataTables.css" integrity="sha384-kTpRxBMGYOdLoIezY37vtaSSbfP52qH5x9UZDA+3xuZmpr3HZYo0tviaiwzFOBTm" crossorigin="anonymous">
 	<!-- UA logos - Business departments -->
 	<!--<link href="assets/css/ua-logos/cba-depts.min.css" rel="stylesheet" />-->
 
@@ -42,7 +42,7 @@
 	<meta name="theme-color" content="#ffffff" />
 
 </head>
-<body onload="getUsers()">
+<body onload="populateFields()">
 	<header>
 		<div class="sticky-header-container">
 			<div id="sticky-header" class="header-main header-primary navbar mega-menu disable-hover" data-spy="affix" data-offset-top="50">
@@ -50,7 +50,7 @@
 					<div class="navbar-container">
 						<div class="navbar-header">
 							<a class="navbar-brand ua-logo" href="index.html" title="The University of Alabama" rel="home">
-								<img class="ua-square-logo pull-left img-responsive" src="assets/img/ua-square-logo.png" width="65" height="65" alt="The University of Alabama" />
+								<img class="ua-square-logo pull-left img-responsive" src="/assets/img/ua-square-logo.png" width="65" height="65" alt="The University of Alabama" />
 								<span class="sr-only">The University of Alabama</span>
 							</a>
 							<div style="font-weight: 600;">MIS</div>
@@ -160,61 +160,14 @@
 						<th scope="col">Role</th>
 					  </tr>
 					</thead>
-					<tbody>
+					<tbody id="tableBody">
 					  <tr id="tableRow">
 						<td id="userId">0</td>
 						<td id="userName">Nick Malmquist</td>
 						<td id="userEmail">nmmalmquist@crimson.ua.edu</td>
 						<td id="userRole">Tester</td>
 					  </tr>
-					  <tr>
-						<td>1</td>
-						<td>Timothy Markfeld</td>
-						<td>tcmarkfeld@crimson.ua.edu</td>
-						<td>Builder</td>
-					  </tr>
-					  <tr>
-						<td>2</td>
-						<td>Blake Minichan</td>
-						<td>beminichan@crimson.ua.edu</td>
-						<td>Spectator</td>
-					  </tr>
-					  <tr>
-						<td>3</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>4</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>5</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>6</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>7</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
-					  <tr>
-						<td>8</td>
-						<td>Nick Malmquist</td>
-						<td>nmmalmquist@crimson.ua.edu</td>
-						<td>Tester</td>
-					  </tr>
+					
 					</tbody>
 				  </table>
 			</div> <!-- .col-md-9 -->
@@ -222,7 +175,6 @@
 	</div> <!-- .container -->
 </section>
 
-<div class="footerContainer">
 	<footer class="footer">
 		<div class="footer-copyright bg-primary">
 			<div class="container">
@@ -250,14 +202,12 @@
 			</div> <!-- .container -->
 		</div> <!-- .footer-copyright -->
 	</footer>
-</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js" integrity="sha384-o6l2EXLcx4A+q7ls2O2OP2Lb2W7iBgOsYvuuRI6G+Efbjbk6J4xbirJpHZZoHbfs" crossorigin="anonymous"></script>
 	<script src="/assets/js/vendors/bootstrap.min.js?ver=3.3.5"></script>
-	<script src="/assets/js/prism.min.js"></script>
+	<!-- <script src="/assets/js/prism.min.js"></script> -->
 	<script src="/assets/js/scripts.min.js?ver=1.0"></script>
 	<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js" integrity="sha384-J1VTqRX3eTNk2nvwiGSqxuZEoboOJHEARFiWWeRcyH+cTelYBIQPq9iNWeCqQV2S" crossorigin="anonymous"></script>
-	<script src="./table.js"></script>
 	<script src="/screens/mis200/scripts/mis200.js"></script>
 </body>
 </html>
