@@ -42,7 +42,7 @@
 	<meta name="theme-color" content="#ffffff" />
 
 </head>
-<body onload="populateFields()">
+<body onload="populateParticipationFields()">
 	<header>
 		<div class="sticky-header-container">
 			<div id="sticky-header" class="header-main header-primary navbar mega-menu disable-hover" data-spy="affix" data-offset-top="50">
@@ -82,8 +82,8 @@
 												<div class="row">
 													<div class="col-md-3">
 														<ul class="list-unstyled">
-                                                            <li><a href="./index.html">Users</a></li>
-                                                            <li><a href="participation.html">Participation</a></li>
+                                                            <li><a href="/screens/mis200/index.html">Users</a></li>
+                                                            <li><a href="/screens/mis200/participation.html">Participation</a></li>
 														</ul>
 													</div> <!-- .col-md-3 -->
 												</div> <!-- .row -->
@@ -102,8 +102,8 @@
 												<div class="row">
 													<div class="col-md-3">
 														<ul class="list-unstyled">
-                                                            <li><a href="/screens/mis/misUsers.html">Users</a></li>
-                                                            <li><a href="/screens/mis/misParticipation.html">Participation</a></li>
+                                                            <li><a href="./misUsers.html">Users</a></li>
+                                                            <li><a href="./misParticipation.html">Participation</a></li>
 														</ul>
 													</div> <!-- .col-md-3 -->
 												</div> <!-- .row -->
@@ -126,22 +126,22 @@
 				<div class="col-md-3">
 					<div class="sidebar sidebar-sticky affix-top scroll-to hidden-xs hidden-sm">
 						<ul class="nav nav-pills nav-stacked">
-							<li class="dropdown mega-menu-full activeMain">
+							<li class="dropdown mega-menu-full">
 								<a href="#" data-toggle="dropdown" class="dropdown-toggle">
 									MIS 200
 								</a>
 								<ul class="dropdown-menu">
-									<li class="active"><a href="./index.html">Users</a></li>
-									<li><a href="./participation.html">Participation</a></li>
+									<li><a href="/screens/mis200/index.html">Users</a></li>
+									<li><a href="/screens/mis200/participation.html">Participation</a></li>
 								</ul>
 							</li>
-							<li class="dropdown mega-menu-full">
+							<li class="dropdown mega-menu-full activeMain">
 								<a href="#" data-toggle="dropdown" class="dropdown-toggle">
 									MIS
 								</a>
 								<ul class="dropdown-menu">
-									<li><a href="/screens/mis/misUsers.html">Users</a></li>
-									<li><a href="/screens/mis/misParticipation.html">Participation</a></li>
+									<li><a href="./misUsers.html">Users</a></li>
+									<li class="active"><a href="./misParticipation.html">Participation</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -150,22 +150,22 @@
 				</div> <!-- .col-md-3 -->
 
 			<div class="col-md-9">
-				<h2 id="getting-started" class="page-header">MIS 200 Users</h2>
+				<h2 id="getting-started" class="page-header">MIS Participation</h2>
 				<table id="myTable" class="display">
 					<thead>
 					  <tr>
 						<th scope="col">User ID</th>
-						<th scope="col">Full Name</th>
-						<th scope="col">Email</th>
-						<th scope="col">Role</th>
+						<th scope="col">Event ID</th>
+						<th scope="col">Category</th>
+						<th scope="col">Scan Time</th>
 					  </tr>
 					</thead>
 					<tbody id="tableBody">
 					  <tr id="tableRow">
-						<td id="userId">0</td>
-						<td id="userName">Nick Malmquist</td>
-						<td id="userEmail">nmmalmquist@crimson.ua.edu</td>
-						<td id="userRole">Tester</td>
+						<td id="userID">0</td>
+						<td id="eventID">Nick Malmquist</td>
+						<td id="category">nmmalmquist@crimson.ua.edu</td>
+						<td id="scanTime">Tester</td>
 					  </tr>
 					
 					</tbody>
@@ -208,6 +208,6 @@
 	<!-- <script src="/assets/js/prism.min.js"></script> -->
 	<script src="/assets/js/scripts.min.js?ver=1.0"></script>
 	<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.js" integrity="sha384-J1VTqRX3eTNk2nvwiGSqxuZEoboOJHEARFiWWeRcyH+cTelYBIQPq9iNWeCqQV2S" crossorigin="anonymous"></script>
-	<script src="/screens/mis200/scripts/mis200.js"></script>
+	<script src="/screens/mis/scripts/mis.js"></script>
 </body>
 </html>

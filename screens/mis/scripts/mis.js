@@ -7,7 +7,7 @@ const getUsers = async () => {
 };
 
 const populateFields = async () => {
-  const userURL = `http://10.8.1.20:83/api/mis200users`;
+  const userURL = `http://10.8.1.20:83/api/misusers`;
   const response = await fetch(userURL);
   const data = await response.json();
 
@@ -23,7 +23,7 @@ const populateFields = async () => {
 };
 
 const populateParticipationFields = async () => {
-  const userURL = `http://10.8.1.20:83/api/mis200participation`;
+  const userURL = `http://10.8.1.20:83/api/misparticipation`;
   const response = await fetch(userURL);
   const data = await response.json();
   console.log(data);
