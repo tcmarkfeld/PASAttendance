@@ -13,13 +13,13 @@ const populateFields = async () => {
 
   $("#myTable").DataTable({
     data: data,
+    buttons: ["csv", "excel", "pdf", "print"],
     columns: [
       { data: "userId" },
       { data: "userFullName" },
       { data: "userEmail" },
       { data: "role" },
     ],
-    buttons: ["csv", "excel", "pdf", "print"],
   });
 };
 
@@ -30,6 +30,7 @@ const populateParticipationFields = async () => {
   console.log(data);
   $("#myTable").DataTable({
     data: data,
+    buttons: ["csv", "excel", "pdf", "print"],
     columns: [
       { data: "userID" },
       { data: "userFullName" },
@@ -37,6 +38,5 @@ const populateParticipationFields = async () => {
       { data: "category" },
       { data: "scanTime" },
     ],
-    buttons: ["csv", "excel", "pdf", "print"],
   });
 };
