@@ -31,6 +31,7 @@ const populateParticipationFields = async () => {
     data: data,
     columns: [
       { data: "userID" },
+      { data: "userFullName" },
       { data: "eventID" },
       { data: "category" },
       { data: "scanTime" },
