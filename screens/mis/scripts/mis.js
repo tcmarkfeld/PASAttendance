@@ -19,6 +19,7 @@ const populateFields = async () => {
       { data: "userEmail" },
       { data: "role" },
     ],
+    buttons: ["csv", "excel", "pdf", "print"],
   });
 };
 
@@ -36,5 +37,6 @@ const populateParticipationFields = async () => {
       { data: "category" },
       { data: "scanTime" },
     ],
+    buttons: ["csv", "excel", "pdf", "print"],
   });
 };
