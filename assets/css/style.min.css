@@ -6974,7 +6974,7 @@ video::-webkit-media-controls {
 }
 section {
   background-color: #fff;
-  min-height: 250px;
+  /* min-height: 250px; */
 }
 .site-content {
   padding: 20px 0 40px 0;

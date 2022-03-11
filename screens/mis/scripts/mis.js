@@ -12,8 +12,9 @@ const populateFields = async () => {
   const data = await response.json();
 
   $("#myTable").DataTable({
+    dom: "Bfrtip",
+    buttons: ["pageLength", "copy", "csv", "excel"],
     data: data,
-    //buttons: ["csv", "excel", "pdf", "print"],
     columns: [
       { data: "userId" },
       { data: "userFullName" },
@@ -27,10 +28,11 @@ const populateParticipationFields = async () => {
   const userURL = `http://10.8.1.20:83/api/misparticipation`;
   const response = await fetch(userURL);
   const data = await response.json();
-  console.log(data);
+
   $("#myTable").DataTable({
+    dom: "Bfrtip",
+    buttons: ["pageLength", "copy", "csv", "excel"],
     data: data,
-    //buttons: ["csv", "excel", "pdf", "print"],
     columns: [
       { data: "userID" },
       { data: "userFullName" },
