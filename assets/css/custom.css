@@ -12,9 +12,7 @@ footer {
   height: 2.5rem;
 }
 .mainSection {
-  /* height: calc(100vh - 212px); */
   padding-bottom: 105px;
-  /* display: inline-block; */
 }
 
 .footerContainer {
@@ -23,12 +21,9 @@ footer {
 }
 
 body {
-  /* width: 100%; */
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  /* position: relative; */
-  /* overflow-y: scroll; */
   flex-grow: 1 !important;
   display: flex;
   flex-direction: column;
